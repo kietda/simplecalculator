@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background1"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/buttonClear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginStart="8dp"
         android:minWidth="46dip"
         android:text="C"
@@ -19,14 +22,17 @@
     <EditText
         android:id="@+id/result"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/newNumber"
         app:layout_constraintEnd_toEndOf="@+id/newNumber"
+        app:layout_constraintHeight_percent="0.10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/newNumber"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,8 +42,10 @@
 
     <Button
         android:id="@+id/button0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:minWidth="46dip"
         android:text="0"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonDot"
@@ -45,8 +53,10 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:minWidth="46dip"
         android:text="1"
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
@@ -54,8 +64,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:minWidth="46dip"
         android:text="2"
         app:layout_constraintBaseline_toBaselineOf="@+id/button3"
@@ -63,8 +75,10 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginTop="8dp"
         android:minWidth="46dip"
         android:text="3"
@@ -75,8 +89,10 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:minWidth="46dip"
         android:text="4"
         app:layout_constraintBaseline_toBaselineOf="@+id/button5"
@@ -84,8 +100,10 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:minWidth="46dip"
         android:text="5"
         app:layout_constraintBaseline_toBaselineOf="@+id/button6"
@@ -93,8 +111,10 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginTop="8dp"
         android:minWidth="46dip"
         android:text="6"
@@ -105,8 +125,10 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginEnd="8dp"
         android:minWidth="46dip"
         android:text="7"
@@ -115,8 +137,10 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginEnd="8dp"
         android:minWidth="46dip"
         android:text="8"
@@ -125,8 +149,10 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginTop="8dp"
         android:minWidth="46dip"
         android:text="9"
@@ -139,8 +165,9 @@
 
     <Button
         android:id="@+id/buttonPlus"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginStart="8dp"
         android:minWidth="46dip"
         android:text="+"
@@ -151,8 +178,10 @@
 
     <Button
         android:id="@+id/buttonMinus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginStart="8dp"
         android:minWidth="46dip"
         android:text="-"
@@ -161,8 +190,10 @@
 
     <Button
         android:id="@+id/buttonMultiply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginStart="8dp"
         android:minWidth="46dip"
         android:text="*"
@@ -171,8 +202,10 @@
 
     <Button
         android:id="@+id/buttonDivide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginStart="8dp"
         android:minWidth="46dip"
         android:text="/"
@@ -181,8 +214,10 @@
 
     <Button
         android:id="@+id/buttonDot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:minWidth="46dip"
         android:text="."
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonNeg"
@@ -191,7 +226,8 @@
     <Button
         android:id="@+id/buttonEqual"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
         android:minWidth="46dip"
         android:text="="
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonNeg"
@@ -200,8 +236,10 @@
 
     <Button
         android:id="@+id/buttonNeg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintWidth_percent="0.16"
         android:layout_marginTop="8dp"
         android:minWidth="46dip"
         android:text="+/-"
@@ -218,7 +256,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/newNumber"
         app:layout_constraintEnd_toStartOf="@+id/newNumber"
@@ -228,17 +266,21 @@
     <EditText
         android:id="@+id/newNumber"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintEnd_toEndOf="@+id/buttonPlus"
+        app:layout_constraintHeight_percent="0.10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/result"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="12345678" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

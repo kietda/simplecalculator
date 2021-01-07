@@ -1,10 +1,14 @@
 package com.dangproject.calculator
 
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
+import java.util.*
 
 
 private const val STATE_PENDING_OPERATION = "PendingOperation"
@@ -87,6 +91,16 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+//        val sourceTextSize : Float = result.textSize
+//        var scaleratio : Float = resources.displayMetrics.density
+//        result.measure(0,0)
+//        var resultHeight = result.measuredHeight
+//        newNumber.measure(0,0)
+//        var resultHeight2 = newNumber.measuredHeight
+//        result.setTextSize(TypedValue.COMPLEX_UNIT_SP, sourceTextSize*scaleratio)
+//        result.setText((sourceTextSize/resources.displayMetrics.density).toInt())
+//            .setTextSize(sourceTextSize/getResources().getDisplayMetrics().density);
+//        val sourceTextSize2 : Float = newNumber.textSize
 
 
     }
@@ -111,26 +125,14 @@ class MainActivity : AppCompatActivity() {
                 "+" -> operand1 = operand1!! + value
             }
         }
-        // if user input an Integer, it should show an Integer
-//        var checkInt : Int = operand1!!.toInt()
-//        var checkZero: Double = operand1!! - checkInt
-//        if (checkZero == 0.0){
-//            result.setText(checkInt.toString())
-//        } else {
-//            result.setText(operand1.toString())
-//        }
         result.setText(getStringFromRoundedDouble(operand1!!))
         newNumber.setText("")
 
     }
     private fun getStringFromRoundedDouble(tNumber : Double) : String {
-        var checkInt : Int = tNumber.toInt()
-        var checkZero: Double = tNumber - checkInt
-        return if (checkZero == 0.0) {
-            checkInt.toString()
-        } else {
-            tNumber.toString()
-        }
+        val df: DecimalFormat = DecimalFormat("0", DecimalFormatSymbols.getInstance(Locale.ENGLISH))
+        df.maximumFractionDigits = 8      // 340 = DecimalFormat.DOUBLE_FRACTION_DIGITS, but 1.2 * 3 does not show good >> should be 8
+        return df.format(tNumber).toString()
     }
 
     fun makeString(list: List<String>,joiner: String = "") : String {
