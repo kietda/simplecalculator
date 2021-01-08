@@ -1,7 +1,7 @@
 package com.dangproject.calculator
 
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.util.TypedValue
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -91,16 +91,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-//        val sourceTextSize : Float = result.textSize
-//        var scaleratio : Float = resources.displayMetrics.density
-//        result.measure(0,0)
-//        var resultHeight = result.measuredHeight
-//        newNumber.measure(0,0)
-//        var resultHeight2 = newNumber.measuredHeight
-//        result.setTextSize(TypedValue.COMPLEX_UNIT_SP, sourceTextSize*scaleratio)
-//        result.setText((sourceTextSize/resources.displayMetrics.density).toInt())
-//            .setTextSize(sourceTextSize/getResources().getDisplayMetrics().density);
-//        val sourceTextSize2 : Float = newNumber.textSize
+
 
 
     }
